@@ -1,0 +1,102 @@
+<div  style="width: 100%; border: 1px solid #EC808D; color: #750036; background-color: #DAC0CF;">
+  <b>||INGRESE EL NOMBRE DEL EVENTO EJM. "AMISAMP 2020 'VENCIENDO LA GASTRITIS'"</b>
+</div>
+
+<div class=" mt-2">
+  <form [formGroup]="eventoForm">
+    <div class="row">
+      <div class="col-6">
+        <div class="row">
+          <div class="col-12">
+            <img src="{{InsertarImagen}}" alt="Insertar Imagen">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            URL IMAGEN:
+          </div>
+          <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+            <input type="text" class="form-control" name="" id="" formControlName="link" style="width: 100% !important">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-12" style="text-align: center; ">
+            <button class="boton " style="width: 140px; height: 50px;" (click)="previsualizarImagen()">Previsualizar Imagen</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-6">
+        
+          <div class="row">
+            <div class="col-9 col-sm-9 col-md-4 col-lg-4 col-xl-4">
+              Titulo:
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+              <input type="text" formControlName="titulo" class="form-control" name="" id=""  style="width: 90% !important" placeholder="Agregar Titulo para el Evento">
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-9 col-sm-9 col-md-4 col-lg-4 col-xl-4">
+              Fecha Inicio:
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+              <input type="date" formControlName="fecha_inicio" class="form-control" name="" id=""  style="width: 90% !important">
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-9 col-sm-9 col-md-4 col-lg-4 col-xl-4">
+              Fecha Fin:
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+              <input type="date" formControlName="fecha_fin" class="form-control" name="" id=""  style="width: 90% !important">
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-9 col-sm-9 col-md-4 col-lg-4 col-xl-4">
+              Descripción:
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+              <textarea name="" formControlName="descripcion" id="" class="textinput form-control" style="width: 90% !important" placeholder="Descripción del Evento"></textarea>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-9 col-sm-9 col-md-4 col-lg-4 col-xl-4">
+              Lugar:
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+              <input type="text" formControlName="lugar" class="form-control" name="" id=""  style="width: 90% !important" placeholder="Lugar">
+              
+            </div>
+          </div>
+          <br>
+          <div class="row" *ngIf="id !==null">
+            <div class="col-9 col-sm-9 col-md-4 col-lg-4 col-xl-4">
+              Visible:
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+              <select formControlName="visible" class="form-control" name="" id=""  style="width: 90% !important" placeholder="visible" >
+                <option value=true>Visible</option>
+                <option value=false>Ocultar</option>
+              </select>
+            </div>
+          </div>
+      </div>
+    </div>
+  </form>
+  
+</div>
+
+<div class="container mt-5" style="text-align: center;">
+  
+<button *ngIf="id == null" class="boton " style="width: 140px; height: 40px;" [disabled]="!eventoForm.valid"  (click)="SubmitEvento()">Agregar Evento</button>
+<button *ngIf="id !== null" class="boton " style="width: 140px; height: 40px;" [disabled]="!eventoForm.valid"  (click)="SubmitEvento()">Actualizar Evento</button>
+</div>

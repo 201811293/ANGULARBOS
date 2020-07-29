@@ -1,0 +1,25 @@
+.boton{
+    border-color: #797979;
+    background-color: white;
+    color: #750036;
+    border-radius: 10px;
+}
+main {
+    color: rgb(218, 192, 207);
+    margin-left: 12%;
+    padding: 1rem; 
+  }
+.col-6 ,.col-sm-6 ,.col-md-7 ,.col-lg-8 ,.col-xl-9 ,.col-12 ,.col-md-5 ,.col-lg-4 ,.col-xl-3 ,.col-9 {
+  position: initial;
+}
+  @media only screen and (max-width:599px){
+    
+    main{
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-top: 5rem;
+        
+        width: 100%;
+    }
+
+  }

@@ -1,0 +1,97 @@
+table{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+input{
+    border-radius: 10px;
+}
+select{
+    border-radius: 10px;
+}
+option{
+    border-radius: 10px;
+}
+th{
+    border: 1px solid #EC808D;
+    color: #f2f2f2;
+    border-bottom: 2px solid #EC808D !important;
+}
+td{
+    border-top: 0px solid  #EC808D;
+}
+
+.bordes{
+    text-align: start;
+    color: #750036;
+    background-color:#DAC0CF;
+    border-top: #EC808D;
+    border-color:  1px #EC808D;
+    border-left: 1px solid  #EC808D;
+    border-bottom: 1px solid  #EC808D;
+    border-right: 1px solid  #EC808D;
+}
+.boton{
+    background-color: #750036 !important;   border: 1px solid #FC7DB2 !important; border-radius: 8px; color: white !important;
+}
+.botones{
+    width: 10%;
+}
+input{
+    border: 1px solid #EC808D;
+    background-color: #F2F2F2;
+}
+select{
+    border: 1px solid #EC808D;
+    background-color: #F2F2F2;
+}
+option{
+    border: 1px solid #EC808D;
+    background-color: #F2F2F2;
+}
+.col-4, .col-12{
+    position: initial;
+  }
+  img{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  
+  @media only screen and (max-width:828px) {
+    #no{
+        display: none;
+    }
+  }
+  @media only screen and (max-width:710px){
+    #no{
+        display: none;
+    }
+    #no2{
+        display: none;
+    }
+  }
+  @media only screen and (max-width:520px){
+    #no{
+        display: none;
+    }
+    #no2{
+        display: none;
+    }
+    #no3{
+        display: none;
+    }
+}
+@media only screen and (max-width:443px){
+    #no{
+        display: none;
+    }
+    #no2{
+        display: none;
+    }
+    #no3{
+        display: none;
+    }
+    #no4{
+        display: none;
+    }
+}
